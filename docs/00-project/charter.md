@@ -1,8 +1,10 @@
 # Project Charter: FastTrack Digital Onboarding
-Version 0.1 | Status: Draft | Author: Debesh Shankhi | Updated: 2026-10-19
+Version 0.1 | Status: Draft | Author: Debesh Shankhi | Updated: 2026-10-20
 Change log: 0.1 initial draft
 
-## 1. Background            (3-4 sentences: who Harbourline is, the board goal)
+## 1. Background
+Harbourline Credit Union is a South Island based credit union with about 85000 members, 14 branches across the island and 420 staffs. Harbourline's 2-year plan is to grow under-35 membership by 20% while maintaining the AML/CFT regulation. All onboarding includes a prospect filling a web form that is reviewed by an Onboarding Officer, who re-keys it into an Excel tracker and requests proof of ID and address from the prospects. The Compliance Team manually searches every applicant on a watchlist vendor portal, then the details are re-keyed into the core banking system through a nightly batch file. This manual process has seen high median end-to-end lead time and high manual touch time per application.
+
 ## 2. Problem statement
 The problem of a manual email-driven onboarding process affects new applicants, the Onboarding Operations team, and the Compliance team, the impact of which is a 9-business day median wait time to open an account, 34% of applicants abandoning before they finish, and 52 minutes of staff effort per application. A successful solution would let most eligible applicants open an account within the same day they apply, with far less manual effort required from the team and no reduction in AML/CFT compliance. 
 
