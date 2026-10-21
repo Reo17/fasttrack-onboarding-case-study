@@ -27,6 +27,20 @@ The problem of a manual email-driven onboarding process affects new applicants, 
 
 
 ## 4. Scope                 (in / out, bullet lists)
+**In Scope**
+- Individual Personal Accounts
+- NZ Residents
+- Online and in-branch tablet channels
+- Risk-based AML screening
+- Automated account creation
+
+**Out of Scope**
+- Business and Trust Accounts (Phase 2, high risk to implement before Individual personal accounts)
+- Joint Accounts (Phase 2, multiple people means multiple identity checks, the rules for operating the account are complicated)
+- Credit Products (goes way from goal of increasing membership by 20%).
+- Migration of Existing Members (Phase 2, high risk to attempt before we can trust the phase 1 results)
+- Replacing Core Banking (high effort, and cannot be fit into the schedule, should be a separate project).
+  
 ## 5. Key stakeholders      (names and roles only; detail is tomorrow)
 ## 6. Constraints           (C-01..)
 ## 7. Assumptions           (A-01..A-08 minimum)
