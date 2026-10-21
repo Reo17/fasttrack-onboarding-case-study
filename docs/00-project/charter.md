@@ -26,20 +26,25 @@ The problem of a manual email-driven onboarding process affects new applicants, 
 - **Manual review rate:** percentage of applications where a compliance officer must make the decision.
 
 
-## 4. Scope                 (in / out, bullet lists)
-**In Scope**
-- Individual Personal Accounts
-- NZ Residents
-- Online and in-branch tablet channels
-- Risk-based AML screening
-- Automated account creation
+## 4. Scope
+**In Scope (Phase 1)**
+- Personal account opening for individuals over 18 who are NZ residents
+- Two channels: online (web and mobile browser), and staff-assisted on a tablet in local branch
+- Identity verification of the applicant during the application
+- Requesting and collecting missing documents from the applicant
+- Risk-based AML/CFT screening, with manual compliance review only for potential matches
+- Account creation in the core banking system without manual re-keying
+- Email and SMS notifications to the applicant at key status changes
+- An audit trail of every check and decision, retained for 5 years
 
 **Out of Scope**
-- Business and Trust Accounts (Phase 2, high risk to implement before Individual personal accounts)
-- Joint Accounts (Phase 2, multiple people means multiple identity checks, the rules for operating the account are complicated)
-- Credit Products (goes way from goal of increasing membership by 20%).
-- Migration of Existing Members (Phase 2, high risk to attempt before we can trust the phase 1 results)
-- Replacing Core Banking (high effort, and cannot be fit into the schedule, should be a separate project).
+- Business and trust Accounts (Phase 2: it's a complex check to verify who owns and controls an entity)
+- Joint Accounts (Phase 2: requires two identity checks, and more complex rules for operating the account)
+- Applicants under 18 (Phase 2: require guardian consent and different identity documents)
+- Non-residents and applicants without NZ address history (Phase 2: need different documents and enhanced checks)
+- Credit products such as loans and credit cards (Separate project: lending carries its own legal obligations and does not directly drive membership growth)
+- Re-verifying or migrating existing member's records (Phase 2: only once the new process has proven reliable)
+- Replacing the core banking system (Separate project: See constraint C-01).
   
 ## 5. Key stakeholders      (names and roles only; detail is tomorrow)
 ## 6. Constraints           (C-01..)
