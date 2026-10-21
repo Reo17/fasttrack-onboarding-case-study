@@ -1,5 +1,5 @@
 # Project Charter: FastTrack Digital Onboarding
-Version 0.1 | Status: Draft | Author: Debesh Shankhi | Updated: 2026-10-20
+Version 0.1 | Status: Draft | Author: Debesh Shankhi | Updated: 2026-10-21
 Change log: 0.1 initial draft
 
 ## 1. Background
