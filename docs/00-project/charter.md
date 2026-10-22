@@ -46,8 +46,19 @@ The problem of a manual email-driven onboarding process affects new applicants, 
 - Re-verifying or migrating existing member's records (Phase 2: only once the new process has proven reliable)
 - Replacing the core banking system (Separate project: See constraint C-01).
   
-## 5. Key stakeholders      (names and roles only; detail is tomorrow)
+## 5. Key stakeholders
+| Stakeholder | Role in project | Stated Goal |
+| --- | --- | --- |
+| Chief Operating Officer | Sponsor | Lower cost per new member |
+| Head of Member Experience | Product Owner | Same-day account opening on mobile |
+| AML/CFT Compliance Officer | Approver, veto power | Zero regulatory findings |
+| | | |
 ## 6. Constraints           (C-01..)
+| ID | Constraint | Type | Source | Impact on the solution |
+| --- | --- | --- | --- | --- |
+| C-01 |  |  |  |  |
+| C-02 | No real-time calls to the core banking system between 01:00 and 04:00 (nightly batch window) | Technical/Operational | Core Banking Platform Lead; IT operations policy | Account-creation requests during this window must be queued and processed after 04:00 |
+
 ## 7. Assumptions           (A-01..A-08 minimum)
 ## 8. Top 3 risks           (risk, impact, mitigation)
 ## 9. Approval              (sponsor, date: blank for now)
