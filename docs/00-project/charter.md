@@ -56,12 +56,13 @@ The problem of a manual email-driven onboarding process affects new applicants, 
 ## 6. Constraints           (C-01..)
 | ID | Constraint | Type | Source | Impact on the solution |
 | --- | --- | --- | --- | --- |
-| C-01 | No changes to the core banking system, CRM and member email/SMS gateway. | Technical | Core Baking Platform Lead (IT)) | Changes in the system will hamper current member's experiences and nightly batch requests might be affected. |
+| C-01 | The core banking system stays in place and cannot be modified; integration must use its exisiting SOAP API and batch import. | Technical | Core Baking Platform Lead (IT)) | Account creation must go through the existing SOAP API. No new fields or custom code should be added in core banking system. |
 | C-02 | No real-time calls to the core banking system between 01:00 and 04:00 (nightly batch window) | Technical/Operational | Core Banking Platform Lead; IT operations policy | Account-creation requests during this window must be queued and processed after 04:00 |
-| C-03 | New solution must comply with the AML/CFT regulations | Regulatory/Legal | AML/CFT Compliance Officer | There must be a measure to maintain compliance even when the automatic screening fails. |
-| C-04 | Thre must be an audit trail of every check and decision that should be retained for 5 years | Policy | Internal Audit | System must be capable to keep records of audit for explainability |
-| C-05 | Must be completed before the new AGM | Time | Chief Operating Officer | Project should be manageable enough to finish before the new AGM to show results to the board members |
-
+| C-03 | Identity verification and AML/CFT screening must be completed before an account in opened. | Regulatory | AML/CFT Act 2009; Harbourline AML/CFT programme | Account creation must be blocked until both checks have passed or a compliance officer has approved the application. |
+| C-04 | Customer records (identity documents, verification and screening results) must be kept for at least 5 years. | Regulatory | AML/CFT Act 2009 | Records must be stored durably, retrievable on request, and protected from deletion for 5 years |
+| C-05 | Every automated and manual decision must be explainable after the fact. | Policy | Internal Audit | Each decision must be logged with timestamp, actor (system or person), inputs and reason; the log cannot be edited. |
+| C-06 | Personal information, including ID images, must be collected only for onboarding, kept secure, and stored in NZ or AU | Regulatory/Policy | Privacy Act 2020; Privacy and Security Officer | ID vendor and document storage must meet data-residency rules; images must be encrypted; only fields needed for onboarding should be collected. |
+| C-07 | Phase 1 must be live within 6 months of project approval (board-endorsed, ahead of AGM) | Time | Chief Operating Officer | Phase 1 is limited to the agreed scope; anything that risks the data moves to Phase 2. |
 
 ## 7. Assumptions           (A-01..A-08 minimum)
 ## 8. Top 3 risks           (risk, impact, mitigation)
