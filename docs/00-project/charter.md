@@ -1,5 +1,5 @@
 # Project Charter: FastTrack Digital Onboarding
-Version 0.1 | Status: Draft | Author: Debesh Shankhi | Updated: 2026-10-21
+Version 0.1 | Status: Draft | Author: Debesh Shankhi | Updated: 2026-10-23
 Change log: 0.1 initial draft
 
 ## 1. Background
@@ -56,8 +56,12 @@ The problem of a manual email-driven onboarding process affects new applicants, 
 ## 6. Constraints           (C-01..)
 | ID | Constraint | Type | Source | Impact on the solution |
 | --- | --- | --- | --- | --- |
-| C-01 |  |  |  |  |
+| C-01 | No changes to the core banking system, CRM and member email/SMS gateway. | Technical | Core Baking Platform Lead (IT)) | Changes in the system will hamper current member's experiences and nightly batch requests might be affected. |
 | C-02 | No real-time calls to the core banking system between 01:00 and 04:00 (nightly batch window) | Technical/Operational | Core Banking Platform Lead; IT operations policy | Account-creation requests during this window must be queued and processed after 04:00 |
+| C-03 | New solution must comply with the AML/CFT regulations | Regulatory/Legal | AML/CFT Compliance Officer | There must be a measure to maintain compliance even when the automatic screening fails. |
+| C-04 | Thre must be an audit trail of every check and decision that should be retained for 5 years | Policy | Internal Audit | System must be capable to keep records of audit for explainability |
+| C-05 | Must be completed before the new AGM | Time | Chief Operating Officer | Project should be manageable enough to finish before the new AGM to show results to the board members |
+
 
 ## 7. Assumptions           (A-01..A-08 minimum)
 ## 8. Top 3 risks           (risk, impact, mitigation)
