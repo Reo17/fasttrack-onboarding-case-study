@@ -60,7 +60,7 @@ The problem of a manual email-driven onboarding process affects new applicants, 
 | New member (persona: 24-year old apprentice) | End user | Open an account from a phone in 10 minutes |
 | ID verification vendor | External | Sell per-check volume |
 
-## 6. Constraints           (C-01..)
+## 6. Constraints
 | ID | Constraint | Type | Source | Impact on the solution |
 | --- | --- | --- | --- | --- |
 | C-01 | The core banking system stays in place and cannot be modified; integration must use its exisiting SOAP API and batch import. | Technical | Core Baking Platform Lead (IT)) | Account creation must go through the existing SOAP API. No new fields or custom code should be added in core banking system. |
@@ -71,6 +71,14 @@ The problem of a manual email-driven onboarding process affects new applicants, 
 | C-06 | Personal information, including ID images, must be collected only for onboarding, kept secure, and stored in NZ or AU | Regulatory/Policy | Privacy Act 2020; Privacy and Security Officer | ID vendor and document storage must meet data-residency rules; images must be encrypted; only fields needed for onboarding should be collected. |
 | C-07 | Phase 1 must be live within 6 months of project approval (board-endorsed, ahead of AGM) | Time | Chief Operating Officer | Phase 1 is limited to the agreed scope; anything that risks the data moves to Phase 2. |
 
-## 7. Assumptions           (A-01..A-08 minimum)
+## 7. Assumptions
+| ID | Assumption | Category | Impact if wrong | Owner | How to validate | Status |
+| --- | --- | --- | --- | --- | --- | --- |
+| A-01 | The ID verification vendor can verify NZ driver licences, not only passports | Vendor | High | Head of Member Experience | Confirm supported documents with the vendor | Open |
+| A-02 | At least 85% of applicants will return no watchlist match | Volume / Compliance | High: OBJ-04 target unachievable | AML/CFT Compliance Officer | Confirm with watchlist lookup rate | Open |
+| A-03 | The core banking SOAP API can create accounts outside the batch window | Technical | High: account creation would need a workaround | Core Banking Platform Lead | Perform application testing to check | Open |
+| A-04 | The 6-month Phase 1 timeline is achievable with the current team | Delivery | High: scope must be cut | Chief Operating Officer | Track the delivery timeline | Open |
+| A-05 | The ID vendor stores images in NZ or Australia | Vendor / Privacy | High: breaks C-06, vendor must be replaced | Privacy & Security Officer | Perform dummy data tests | Open |
+
 ## 8. Top 3 risks           (risk, impact, mitigation)
 ## 9. Approval              (sponsor, date: blank for now)
