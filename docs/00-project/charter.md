@@ -1,5 +1,5 @@
 # Project Charter: FastTrack Digital Onboarding
-Version 0.1 | Status: Draft | Author: Debesh Shankhi | Updated: 2026-10-23
+Version 0.1 | Status: Draft | Author: Debesh Shankhi | Updated: 2026-10-24
 Change log: 0.1 initial draft
 
 ## 1. Background
@@ -52,7 +52,14 @@ The problem of a manual email-driven onboarding process affects new applicants, 
 | Chief Operating Officer | Sponsor | Lower cost per new member |
 | Head of Member Experience | Product Owner | Same-day account opening on mobile |
 | AML/CFT Compliance Officer | Approver, veto power | Zero regulatory findings |
-| | | |
+| Onboarding Operations Team Lead | Key user, 6 FTE team | Fewer chasing emails |
+| Branch Manager (Riccarton) | Secondary user | Walk-in applicants handled on a tablet |
+| Core Banking Platform Lead (IT) | System owner | No changes to the core |
+| Privacy & Security Officer | Approver | Data minimisation, encrypted ID images |
+| Internal Audit | Reviewer | Full audit trail of every decision |
+| New member (persona: 24-year old apprentice) | End user | Open an account from a phone in 10 minutes |
+| ID verification vendor | External | Sell per-check volume |
+
 ## 6. Constraints           (C-01..)
 | ID | Constraint | Type | Source | Impact on the solution |
 | --- | --- | --- | --- | --- |
