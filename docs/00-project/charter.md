@@ -81,4 +81,10 @@ The problem of a manual email-driven onboarding process affects new applicants, 
 | A-05 | The ID vendor stores images in NZ or Australia | Vendor / Privacy | High: breaks C-06, vendor must be replaced | Privacy & Security Officer | Perform dummy data tests | Open |
 
 ## 8. Top 3 risks           (risk, impact, mitigation)
+| ID | Risk | Category | Impact | Owner | Mitigation |
+| --- | --- | --- | --- | --- | --- |
+| R-01 |  |  |  |  |  |
+| R-02 |  |  |  |  |  |
+| R-03 |  |  |  |  |  |
+
 ## 9. Approval              (sponsor, date: blank for now)
