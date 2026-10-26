@@ -72,13 +72,16 @@ The problem of a manual email-driven onboarding process affects new applicants, 
 | C-07 | Phase 1 must be live within 6 months of project approval (board-endorsed, ahead of AGM) | Time | Chief Operating Officer | Phase 1 is limited to the agreed scope; anything that risks the data moves to Phase 2. |
 
 ## 7. Assumptions
-| ID | Assumption | Category | Impact if wrong | Owner | How to validate | Status |
-| --- | --- | --- | --- | --- | --- | --- |
-| A-01 | The ID verification vendor can verify NZ driver licences, not only passports | Vendor | High | Head of Member Experience | Confirm supported documents with the vendor | Open |
-| A-02 | At least 85% of applicants will return no watchlist match | Volume / Compliance | High: OBJ-04 target unachievable | AML/CFT Compliance Officer | Confirm with watchlist lookup rate | Open |
-| A-03 | The core banking SOAP API can create accounts outside the batch window | Technical | High: account creation would need a workaround | Core Banking Platform Lead | Perform application testing to check | Open |
-| A-04 | The 6-month Phase 1 timeline is achievable with the current team | Delivery | High: scope must be cut | Chief Operating Officer | Track the delivery timeline | Open |
-| A-05 | The ID vendor stores images in NZ or Australia | Vendor / Privacy | High: breaks C-06, vendor must be replaced | Privacy & Security Officer | Perform dummy data tests | Open |
+| ID | Assumption | Category | Impact if wrong | Owner | How to validate | Validate by | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| A-01 | The ID verification vendor can verify NZ driver licences, not only passports | Vendor | High: applicants with only a driver licence (many under-35s) could not apply | Head of Member Experience | Obtain the vendor's supported-documents list in writing | Before vendor selection | Open |
+| A-02 | At least 85% of applicants return no watchlist match | Volume / Compliance | High: OBJ-04 target of 15% manual review is unachievable | AML/CFT Compliance Officer | Run a sample of 200 anonymised past applicants through the screening vendor's trial and count matches | Before design sign-off | Open |
+| A-03 | The core banking SOAP API can create accounts outside the batch window | Technical | High: account creation needs a workaround, possibly a queue for all requests | Core Banking Platform Lead | Create 10 test accounts via the SOAP API in the test environment during and after the 01:00-04:00 window | Before design sign-off | Open |
+| A-04 | Phase 1 can be delivered within 6 months of approval (illustrative figure agreed with the COO) | Delivery | High: scope must be cut or the date moves | Chief Operating Officer | Build a bottom-up estimate of Phase 1 tasks and review it with the delivery team | Before project approval | Open |
+| A-05 | The ID vendor stores images only in NZ or Australia | Vendor / Privacy | High: breaks C-06, so the vendor must be replaced | Privacy & Security Officer | Obtain written confirmation of storage region from the vendor's contract or data processing agreement | Before vendor selection | Open |
+| A-06 | The applicants have a suitable phone with a working camera to scan the documents | Technical | High: Need additional option to upload a pre-captured photo of the document | IT Lead | Run a member survey to validate if current members have access to phones with cameras | Before technical implementation | Open |
+| A-07 | The baseline data form Excel tracker is trustworthy and accurate | Technical | High: Leads to misinterpret project progress and misleading project reports. | IT Lead | Cross-check data findings with stakeholders to ensure reliability | Before charter sign-off | Open |
+| A-08 | Compliance team accepts risk-based screening instead of reviewing everyone | Compliance | High: Higher likelihood of non-compliance with regulations, leading to potential fines and legal scrutiny, further damaging reputation. | AML/CFT Compliance Officer | Review the screening workflow in AML/CFT and confirm that compliance has approved the risk-based methodology in committee minutes | Before project approval | Open |
 
 ## 8. Top 3 risks           (risk, impact, mitigation)
 | ID | Risk | Category | Impact | Owner | Mitigation |
