@@ -83,11 +83,11 @@ The problem of a manual email-driven onboarding process affects new applicants, 
 | A-07 | The baseline figures from the Excel tracker are accurate | Data | High: OBJ-01 to OBJ-03 would be set against the wrong baseline, so success could not be proven | Onboarding Ops Team Lead | Compare 30 randomly sampled tracker records against source emails and core banking account-open dates; pass = at least 95% of dates match | Before charter sign-off | Open |
 | A-08 | The Compliance team will accept risk-based screening, reviewing only potential matches instead of every applicant | Stakeholder | High: every applicant still needs manual review, so OBJ-04 fails and the lead-time target (OBJ-01) is unlikely to be met | Head of Member Experience | Present the risk-based decision table to the AML/CFT Compliance Officer; pass = approval recorded in AML/CFT committee minutes | Before project approval | Open |
 
-## 8. Top 3 risks           (risk, impact, mitigation)
-| ID | Risk | Category | Impact | Owner | Mitigation |
-| --- | --- | --- | --- | --- | --- |
-| R-01 |  |  |  |  |  |
-| R-02 |  |  |  |  |  |
-| R-03 |  |  |  |  |  |
+## 8. Top 3 risks
+| ID | Risk | Likelihood | Rating | Response | Mitigation | Contingency | Owner |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| R-01 | Because automated screening relies on name matching against a score threshold, an applicant on a sanctions or PEP list may be auto-cleared (a false negative), leading to an account being opened in breach of AML/CFT obligations, with regulatory penalties and reputational damage | 2 | 5 | 10 Medium (High Impact) | Reduce | Compliance approves the matching threshold; test the vendor with known test cases before go-live; monthly QA sample of auto-cleared applications (OBJ-5) | Freeze the account and follow the AML/CFT programme's breach procedure | AML/CFT Compliance Officer |
+| R-02 |  |  |  |  |  |  |  |
+| R-03 |  |  |  |  |  |  |  |
 
 ## 9. Approval              (sponsor, date: blank for now)
