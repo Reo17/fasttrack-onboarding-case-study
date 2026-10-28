@@ -1,5 +1,5 @@
 # Project Charter: FastTrack Digital Onboarding
-Version 0.1 | Status: Draft | Author: Debesh Shankhi | Updated: 2026-10-24
+Version 0.1 | Status: Draft | Author: Debesh Shankhi | Updated: 2026-10-28
 Change log: 0.1 initial draft
 
 ## 1. Background
@@ -84,10 +84,11 @@ The problem of a manual email-driven onboarding process affects new applicants, 
 | A-08 | The Compliance team will accept risk-based screening, reviewing only potential matches instead of every applicant | Stakeholder | High: every applicant still needs manual review, so OBJ-04 fails and the lead-time target (OBJ-01) is unlikely to be met | Head of Member Experience | Present the risk-based decision table to the AML/CFT Compliance Officer; pass = approval recorded in AML/CFT committee minutes | Before project approval | Open |
 
 ## 8. Top 3 risks
-| ID | Risk | Likelihood | Rating | Response | Mitigation | Contingency | Owner |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| ID | Risk | Likelihood | Impact | Rating | Response | Mitigation | Contingency | Owner |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | R-01 | Because automated screening relies on name matching against a score threshold, an applicant on a sanctions or PEP list may be auto-cleared (a false negative), leading to an account being opened in breach of AML/CFT obligations, with regulatory penalties and reputational damage | 2 | 5 | 10 Medium (High Impact) | Reduce | Compliance approves the matching threshold; test the vendor with known test cases before go-live; monthly QA sample of auto-cleared applications (OBJ-5) | Freeze the account and follow the AML/CFT programme's breach procedure | AML/CFT Compliance Officer |
-| R-02 |  |  |  |  |  |  |  |
-| R-03 |  |  |  |  |  |  |  |
-
+| R-02 | Because many under-35 applicants hold an NZ driver licence or Kiwi Access Card but no passport, the selected ID vendor may not support these documents, leading to these applicants being unable to apply online and undermining the under-35 growth goal and OBJ-02 | 3 | 4 | 12 Medium | Avoid | Make NZ driver licence and Kiwi Access Card support a mandatory vendor-selection criterion (validates A-01) | Verify these applicants in branch using the staff-assisted tablet channel | Head of Member Experience |
+| R-03 | Because Harbourline policy (C-06) requires ID images to be stored in NZ or Australia, and ID vendors often rely on third-party cloud providers, images may be stored or processed outside these regions, leading to a policy breach, a possible privacy breach under the Privacy Act 2020, and loss of member trust | 2 | 5 | 10 Medium (Impact 5) | Avoid, then Reduce | Select only vendors that contractually commit to NZ/AU storage (validates A-05); require notice of any change of sub-processor; annual assurance report | Suspend image uploads to the vendor, notify the Privacy & Security Officer, and assess whether it is a notifiable privacy breach | Privacy & Security Officer |
+| R-04 | Because ID capture relies on a phone camera, applicants without a suitable device may be unable to finish online, leading to higher abandonment (OBJ-02) and some groups being excluded | 2 | 3 | 6 Low | Reduce | Allow upload of pre-captured document photos; signpost the in-branch tablet channel | Staff-assisted application in branch | Head of Member Experience |
+| R-05 | Because the Onboarding Operations team believe automation will lead to redundancies, they may not fully engage in design and testing, and exception cases only they know about may be missed, leading to a process that fails on real applications, touch time not falling (OBJ-03), and delays to go-live (C-07) | 3 | 4 | 12 Medium | Reduce | COO communicates the role redesign (from data entry to exception handling) before design starts; Ops officers help map the As-Is process and design exception paths; Ops staff lead user acceptance testing; training for new roles before go-live | Floor support for the first weeks; time-limited parallel running with a fixed end date; escalate to the COO if the Excel tracker is still used after that date | Chief Operating Officer |
 ## 9. Approval              (sponsor, date: blank for now)
