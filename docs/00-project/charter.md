@@ -91,4 +91,10 @@ The problem of a manual email-driven onboarding process affects new applicants, 
 | R-03 | Because Harbourline policy (C-06) requires ID images to be stored in NZ or Australia, and ID vendors often rely on third-party cloud providers, images may be stored or processed outside these regions, leading to a policy breach, a possible privacy breach under the Privacy Act 2020, and loss of member trust | 2 | 5 | 10 Medium (Impact 5) | Avoid, then Reduce | Select only vendors that contractually commit to NZ/AU storage (validates A-05); require notice of any change of sub-processor; annual assurance report | Suspend image uploads to the vendor, notify the Privacy & Security Officer, and assess whether it is a notifiable privacy breach | Privacy & Security Officer |
 | R-04 | Because ID capture relies on a phone camera, applicants without a suitable device may be unable to finish online, leading to higher abandonment (OBJ-02) and some groups being excluded | 2 | 3 | 6 Low | Reduce | Allow upload of pre-captured document photos; signpost the in-branch tablet channel | Staff-assisted application in branch | Head of Member Experience |
 | R-05 | Because the Onboarding Operations team believe automation will lead to redundancies, they may not fully engage in design and testing, and exception cases only they know about may be missed, leading to a process that fails on real applications, touch time not falling (OBJ-03), and delays to go-live (C-07) | 3 | 4 | 12 Medium | Reduce | COO communicates the role redesign (from data entry to exception handling) before design starts; Ops officers help map the As-Is process and design exception paths; Ops staff lead user acceptance testing; training for new roles before go-live | Floor support for the first weeks; time-limited parallel running with a fixed end date; escalate to the COO if the Excel tracker is still used after that date | Chief Operating Officer |
-## 9. Approval              (sponsor, date: blank for now)
+## 9. Approval
+
+| Role | Name | Decision | Date |
+| --- | --- | --- | --- |
+| Sponsor | Chief Operating Officer |  |  |
+| Product Owner | Head of Member Experience |  |  |
+| AML/CFT Compliance Officer | AML/CFT Compliance Officer |  |  |
