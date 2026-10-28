@@ -1,6 +1,6 @@
 # Project Charter: FastTrack Digital Onboarding
-Version 0.1 | Status: Draft | Author: Debesh Shankhi | Updated: 2026-10-28
-Change log: 0.1 initial draft
+Version 1.0 | Status: Completed | Author: Debesh Shankhi | Updated: 2026-10-28
+Change log: 1.0
 
 ## 1. Background
 Harbourline Credit Union is a member-owned financial cooperative based in the South Island, with about 85,000 members, 14 branches, and 420 staff. As a financial institution, it must comply with the AML/CFT Act 2009 and the Privacy Act 2020. The board's 2-year strategy is to grow under-35 membership by 20%. Prospective members currently apply through a web form that arrives as a PDF in a shared inbox, an Onboarding Officer re-keys the details into an Excel tracker and requests proof of identity and address by email. The Compliance team then checks each applicant manually against watchlists on a vendor portal, and an officer re-keys the approved details into the core banking system, which imports new accounts in a nightly batch. Younger customers increasingly expect to open an account from their phone within minutes, as digital-first banks already allow, which puts the board's growth target at risk.
@@ -47,18 +47,16 @@ The problem of a manual email-driven onboarding process affects new applicants, 
 - Replacing the core banking system (Separate project: See constraint C-01).
   
 ## 5. Key stakeholders
-| Stakeholder | Role in project | Stated Goal |
+
+| Role | Name / position | Responsibility in project |
 | --- | --- | --- |
-| Chief Operating Officer | Sponsor | Lower cost per new member |
-| Head of Member Experience | Product Owner | Same-day account opening on mobile |
-| AML/CFT Compliance Officer | Approver, veto power | Zero regulatory findings |
-| Onboarding Operations Team Lead | Key user, 6 FTE team | Fewer chasing emails |
-| Branch Manager (Riccarton) | Secondary user | Walk-in applicants handled on a tablet |
-| Core Banking Platform Lead (IT) | System owner | No changes to the core |
-| Privacy & Security Officer | Approver | Data minimisation, encrypted ID images |
-| Internal Audit | Reviewer | Full audit trail of every decision |
-| New member (persona: 24-year old apprentice) | End user | Open an account from a phone in 10 minutes |
-| ID verification vendor | External | Sell per-check volume |
+| Sponsor | Chief Operating Officer | Owns the business case; approves scope, budget and major changes |
+| Product Owner | Head of Member Experience | Sets priorities; accepts delivered features |
+| Approver | AML/CFT Compliance Officer | Approves screening rules and the compliance design |
+| Approver | Privacy & Security Officer | Approves data handling and vendor privacy terms |
+| System owner | Core Banking Platform Lead | Approves integration with the core banking system |
+| Key user lead | Onboarding Operations Team Lead | Represents the onboarding team in design and testing |
+| Assurance | Internal Audit | Reviews controls and the audit trail |
 
 ## 6. Constraints
 | ID | Constraint | Type | Source | Impact on the solution |
