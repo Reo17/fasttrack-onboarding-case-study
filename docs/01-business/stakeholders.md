@@ -1,5 +1,5 @@
 # Stakeholder Register
-Version 1.0 | Status: Draft | Author: Debesh Shankhi | Updated: 02/10/2026
+Version 1.0 | Status: Draft | Author: Debesh Shankhi | Updated: 2026-11-03
 
 | ID | Stakeholder | Role in project | Power | Interest | Current → desired | Key concern | Strategy | Engagement actions |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -34,3 +34,15 @@ quadrantChart
     New member: [0.9, 0.15]
     ID vendor: [0.3, 0.55]
 ```
+## Decision RACI
+
+R = Responsible, A = Accountable, C = Consulted, I = Informed
+
+| Decision | COO | Product Owner | Compliance | Privacy | Core Banking | Ops Lead | Internal Audit | BA |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Approve project scope and budget | A | R | C | I | I | I | I | R |
+| Select the ID verification vendor | I | A | C | C | C | I | - | R |
+| Set the AML screening match threshold | I | C | A | - | - | I | C | R |
+| Approve the To-Be process design | I | A | C | I | C | C | I | R |
+| Approve the core banking integration approach | I | C | I | I | A | I | - | R |
+| Go-live decision | A | R | C | C | C | C | I | R |
