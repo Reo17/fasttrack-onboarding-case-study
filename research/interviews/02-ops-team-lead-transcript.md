@@ -158,19 +158,44 @@ The CRM rollout was the opposite. It was decided, configured and switched on. We
 ---
 
 ## Key findings
-
+ 
 | # | Finding | Evidence | Links to |
 | --- | --- | --- | --- |
-| F-01 |  |  |  |
-
+| F-01 | The biggest wait is for applicants to send documents: anywhere from an hour to a week, and some never reply | Q2 | Bottleneck analysis; abandonment (OBJ-02) |
+| F-02 | Compliance screens on Tuesday and Thursday mornings, so an application ready on Thursday afternoon waits until Tuesday | Q2; matches Compliance interview F-01 | Bottleneck; As-Is BPMN timer |
+| F-03 | Touch time is 35–40 minutes for a clean application and over an hour for a messy one. Re-keying ~40 fields into core banking (~15 min) is the largest single step, then document checks (~10 min), setup (~5 min) and repeated follow-ups | Q3 | OBJ-03 (consistent with the 52-minute average) |
+| F-04 | About a quarter of applications need at least one resend. The main reasons are proof of address (not in the applicant's name, or older than 3 months, common for young people who flat or live with parents), poor ID photos, and name variations | Q6 | 27% bounce rate; under-35 goal; A-06 |
+| F-05 | Tracker dates show when someone typed the update, not when the event happened, and rows for applicants who stop replying are never closed (~200 cleared out in June). The core banking account-open date is the most reliable date | Q4 | **A-07 at risk**; baseline lead time and abandonment may be distorted |
+| F-06 | Two checks aren't written down anywhere: searching core banking for an existing member record (to avoid duplicates), and assigning the account to a branch by address (branches get credit for new members) | Q5 | Hidden requirements; Branch Manager (SH-07) |
+| F-07 | One officer owns each application from start to finish. When the owner is on leave, applications stall, because there's no shared view of the work | Q1 | Pain point; future requirement for visible work queues |
+| F-08 | Branch applications arrive as scanned paper forms that are sometimes hard to read, causing more back-and-forth | Q2 | Scope (tablet channel); As-Is variant |
+| F-09 | Messy exceptions happen one or two times a week across the team; name changes about twice a month. One recent case took two and a half weeks | Q7 | To-Be exception path; R-05 |
+| F-10 | The team is worried automation means job losses. Past change failed when the team was involved late (CRM rollout) and worked when they co-designed it (email templates) | Q8, Q9 | **R-05** (evidence for the mitigation); escalate to COO |
+| F-11 | Month-end branch campaigns roughly double application volume, which is when work backs up | Q13 (volunteered) | **New risk R-07 (peak volume)**; capacity NFR; ID vendor peak SLA (SH-10) |
+ 
 ## Tagged quotes
-
-> "" () #
-
+ 
+> "The last review we had, the slide said 'onboarding team: bottleneck,' and nobody had asked us a single question." (Opening) #R-05 #trust
+>
+> "And that's not us, but it's us the applicant emails asking where their account is." (Q2) #bottleneck #compliance-batch
+>
+> "You learn them when you get it wrong the first time." (Q5) #hidden-requirements
+>
+> "If whatever you build only works on a quiet week, it doesn't work." (Q13) #NFR #peak-volume
+ 
 ## Open questions
-
-- [ ]
+ 
+- [ ] How much does volume actually rise at month end? Check the tracker by date
+- [ ] What share of applications come from branches versus online?
+- [ ] How is the duplicate-member check done today (which fields are matched)?
+- [ ] Has any decision been made about future team roles? (COO)
 
 ## Actions and updates to other documents
-
-- [ ]
+ 
+- [ ] Send the interview summary to the Ops Team Lead by Friday
+- [ ] Raise the team's job-security concern with the COO (R-05 owner), without attributing it to individual team members
+- [ ] Use the read access to the tracker: compare 30 random rows with core banking account-open dates (validates A-07)
+- [ ] Assumptions log: A-07 at risk (evidence from F-05 and Compliance F-11)
+- [ ] Risks: add R-07 (peak volume at month end)
+- [ ] As-Is process: include the duplicate check, branch assignment, and the paper branch channel
+- [ ] Interviews: add Aroha (Onboarding Officer) and the Riccarton Branch Manager
