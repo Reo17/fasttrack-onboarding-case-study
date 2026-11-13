@@ -1,5 +1,5 @@
 # Interview Transcript: AML/CFT Compliance Officer
-Version 1.0 | Status: Final | Author: Debesh Shankhi | Updated: 2026-11-10
+Version 1.0 | Status: Final | Author: Debesh Shankhi | Updated: 2026-11-13
 Guide: 01-compliance-officer-guide.md
 Duration: ~30 minutes
 
@@ -124,19 +124,46 @@ Send me the summary by end of the week, and the bit of the charter where it says
 ---
 
 ## Key findings
-
+ 
 | # | Finding | Evidence | Links to |
 | --- | --- | --- | --- |
-| F-01 |  |  |  |
-
+| F-01 | Screening is done in batches a couple of times a week, not as applications arrive. This is the main cause of the compliance wait | Q2; Ops interview confirms Tuesday and Thursday batches | Baseline 2.8-day queue; bottleneck analysis; As-Is BPMN timer |
+| F-02 | About 900 applicants were screened last month, ~120 (13%) had a hit, and only 2–3 were genuine. About 87% had no hit at all | Q4 (figures rough; officer wants to check the spreadsheet) | Supports A-02 (≥85%) with little margin; OBJ-04 |
+| F-03 | False positives take most of the team's screening time: ~120 a month at 10–15 minutes each, roughly 20–30 hours a month | Q4, Q6 | Pain point; OBJ-04 |
+| F-04 | Hits take longer to resolve when the application lacks data compliance needs (full date of birth, previous address, place of birth). In one case this added 8 days, and the applicant went elsewhere | Q6, Q7, Q11 | OBJ-01, OBJ-02; future requirement on data collected at application |
+| F-05 | A confirmed PEP needs enhanced due diligence and senior management approval (COO or CEO) before an account opens. This can take about two weeks, but happens only a handful of times a year | Q3 probe ("up the line") | **New constraint C-08**; PEP cases stay on a manual path |
+| F-06 | The officer will consider risk-based screening on six conditions: she sets the threshold; every automatic decision is logged and explainable; any hit goes to a person; a monthly sample of ~30 automatic clears is re-checked; a monthly performance report; testing with known matches before go-live | Q8, Q9 | **A-08** (conditional yes); business rules; NFRs; OBJ-05; R-01 |
+| F-07 | False negatives can't be detected today. If the vendor portal misses a match, nobody knows | Q4 | R-01; supports the OBJ-05 monthly sample |
+| F-08 | Screening records are spread across monthly screenshot folders, a spreadsheet and email. An audit sample of 20 took an analyst most of a morning, and records must be kept for 5 years | Q5 | C-04, C-05; pain point; future audit-trail requirement |
+| F-09 | Four things must not change: identity verified and screening complete before an account opens; PEP enhanced due diligence and approval; 5-year record keeping; and nothing in the process may tip off an applicant under suspicion | Q10 | C-03, C-04, C-08; **new constraint C-09 (no tipping off)** |
+| F-10 | The vendor portal goes down about twice a year, sometimes for a full day. What an automated process should do then is undefined, and it must not be "clear everyone" | Q12 (volunteered) | **New risk R-06**; future requirement for safe behaviour during outages |
+| F-11 | Compliance's spreadsheet and onboarding's tracker don't match (dates and name spellings) | Q12 (volunteered); Ops interview explains why | A-07 at risk |
+ 
 ## Tagged quotes
-
-> "" () #
-
+ 
+> "I won't sign off on a black box." (Q8) #A-08 #concern
+>
+> "False negatives, though. By definition, I wouldn't know, would I?" (Q4) #R-01 #OBJ-05
+>
+> "It was the right outcome from a compliance point of view. Just not much use to anyone else." (Q7) #abandonment #missing-data
+>
+> "Nobody waiting a week for something we should have asked on day one." (Q11) #requirement
+ 
 ## Open questions
-
-- [ ]
+ 
+- [ ] What are the exact figures for last month from the compliance spreadsheet? (validates A-02)
+- [ ] How quickly does the screening vendor update its sanctions and PEP lists, and how can compliance check this?
+- [ ] What should the process do while the vendor portal is unavailable?
+- [ ] Which sections of the AML/CFT programme apply? (officer to send)
+- [ ] Confirm the exact wording of the PEP approval requirement (C-08) in the programme and the Act
 
 ## Actions and updates to other documents
+ 
+- [ ] Send the interview summary to the Compliance Officer by Friday, with the charter section showing compliance approves the screening rules and design
+- [ ] Request a copy of the compliance screening spreadsheet
+- [ ] Charter: add C-08 (senior management approval for PEP relationships) and C-09 (no tipping off)
+- [ ] Assumptions log: A-02 evidence (~87%, thin margin); A-08 now conditionally supported; A-07 at risk
+- [ ] Risks: add R-06 (vendor portal outage)
+- [ ] Stakeholder register: plan early reviews with the Privacy Officer (vendor storage) and Internal Audit (audit trail)
 
-- [ ]
+
