@@ -1,6 +1,6 @@
 # Project Charter: FastTrack Digital Onboarding
-Version 1.0 | Status: Completed | Author: Debesh Shankhi | Updated: 2026-11-03
-Change log: 1.0
+Version 1.1 | Status: Completed | Author: Debesh Shankhi | Updated: 2026-11-14
+Change log: 1.1
 
 ## 1. Background
 Harbourline Credit Union is a member-owned financial cooperative based in the South Island, with about 85,000 members, 14 branches, and 420 staff. As a financial institution, it must comply with the AML/CFT Act 2009 and the Privacy Act 2020. The board's 2-year strategy is to grow under-35 membership by 20%. Prospective members currently apply through a web form that arrives as a PDF in a shared inbox, an Onboarding Officer re-keys the details into an Excel tracker and requests proof of identity and address by email. The Compliance team then checks each applicant manually against watchlists on a vendor portal, and an officer re-keys the approved details into the core banking system, which imports new accounts in a nightly batch. Younger customers increasingly expect to open an account from their phone within minutes, as digital-first banks already allow, which puts the board's growth target at risk.
@@ -68,6 +68,8 @@ The problem of a manual email-driven onboarding process affects new applicants, 
 | C-05 | Every automated and manual decision must be explainable after the fact. | Policy | Internal Audit | Each decision must be logged with timestamp, actor (system or person), inputs and reason; the log cannot be edited. |
 | C-06 | Personal information, including ID images, must be collected only for onboarding, kept secure, and stored in NZ or AU | Regulatory/Policy | Privacy Act 2020; Privacy and Security Officer | ID vendor and document storage must meet data-residency rules; images must be encrypted; only fields needed for onboarding should be collected. |
 | C-07 | Phase 1 must be live within 6 months of project approval (board-endorsed, ahead of AGM) | Time | Chief Operating Officer | Phase 1 is limited to the agreed scope; anything that risks the data moves to Phase 2. |
+| C-08 | A confirmed politically exposed person (PEP) requires enhanced due diligence and senior management approval before an account is opened | Regulatory | AML/CFT Act 2009; Harbourline AML/CFT programme; Compliance interview F-05 | PEP cases must follow a manual approval path and can never be cleared automatically |
+| C-09 | No communication or system behaviour may reveal to an applicant that a suspicious activity report is being considered or has been filed (no tipping off) | Regulatory | AML/CFT Act 2009; Harbourline AML/CFT programme; Compliance interview F-09 | Status messages, emails and document requests must look the same as for any delayed application; no applicant-facing status may indicate a suspicion review; only compliance staff can see the reason for the delay |
 
 ## 7. Assumptions
 | ID | Assumption | Category | Impact if wrong | Owner | How to validate | Validate by | Status |
